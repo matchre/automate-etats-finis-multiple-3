@@ -1,3 +1,5 @@
+jQuery.noConflict();
+
 StateMachineApp = function() {
 	this.width = StateMachineApp.Width;
 	this.height = StateMachineApp.Height;
@@ -31,15 +33,15 @@ StateMachineApp.prototype.start = function(canvasId) {
 	tool.onMouseMove = function(event) {
 	}
 
-	$('#step').click(function() {
+	jQuery('#step').click(function() {
 		me.step();
 	})
 
-	$('#restart').click(function() {
+	jQuery('#restart').click(function() {
 		me.restart();
 	})
 
-	$('#number-input').change(function(event) {
+	jQuery('#number-input').change(function(event) {
 		me.loadValue();
 	});
 
@@ -48,7 +50,7 @@ StateMachineApp.prototype.start = function(canvasId) {
 };
 
 StateMachineApp.prototype.loadValue = function(value) {
-	var value = $('#number-input').val();
+	var value = jQuery('#number-input').val();
 
 	value = parseInt(value);
 	
@@ -67,7 +69,7 @@ StateMachineApp.prototype.restart = function(value) {
 		value = value < 1 ? 1 : value;
 		value = value > 255*255 ? 255*255 : value;
 
-		$('#number-input').val(value);
+		jQuery('#number-input').val(value);
 		this.strip.generate(value);
 	}
 	this.render();
