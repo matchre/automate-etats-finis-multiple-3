@@ -1,5 +1,35 @@
 {
 	"name": "Automate à état finis",
 	"width": "600px",
-	"height": "400px"
+	"height": "400px",
+	"comment" : "Un grain qui simule un exemple d'automate fini . . à réutiliser pour des supports culturels ou didactiques",
+	"links" : [
+		{
+			"title" : "Définition de l'objet informatique manipulé",
+			"uri" : "http://fr.wikipedia.org/wiki/Automate_fini"
+		}
+		],
+	"authors" : [
+		{			
+		        "name" : "Delorme, Marc",
+			"role" : "auteur",
+			"comment" : "version HTLM5/JS"
+		},
+		{
+			"name" : "http://www.junior-supelec.fr",
+			"role" : "producteur"
+		}
+		],
+	"licenses" : [
+		{
+			"name" : "CC BY-NC-SA",
+			"uri" : "http://creativecommons.org/licenses/by-nc-sa/3.0/fr",
+			"comment" : "s'applique aux documents"
+		},
+		{
+			"name" : "CeCILL-C",
+			"uri" : "http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html",
+			"comment" : "s'applique au code source"
+		}
+		]
 }
