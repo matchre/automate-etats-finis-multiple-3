@@ -10,8 +10,8 @@
 		}
 		],
 	"authors" : [
-		{			
-		        "name" : "Delorme, Marc",
+		{
+		    "name" : "Delorme, Marc",
 			"role" : "auteur",
 			"comment" : "version HTLM5/JS"
 		},
